@@ -18,6 +18,7 @@ case $1 in
 		;;
 	restart)
 		/bin/su tomcat $CATALINA_HOME/bin/shutdown.sh
+		sleep 15s
 		/bin/su tomcat $CATALINA_HOME/bin/startup.sh
 		;;
 	esac

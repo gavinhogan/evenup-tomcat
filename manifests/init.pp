@@ -70,7 +70,7 @@ class tomcat(
     ''      => "http://download.nextag.com/apache/tomcat/tomcat-7/v${version}/bin",
     default => $static_url
   }
-  require java
+  require java7
 
   class { 'tomcat::install':
     install_dir   => $install_dir,
